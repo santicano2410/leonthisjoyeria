@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - LEONTHIS JOYERIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-catalogo.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="catalog-header">
+        <div class="back-button">
+            <a href="index.html" class="btn-back">
+                ← Volver al Inicio
+            </a>
+        </div>
+        <div class="catalog-logo">
+            <img src="logo.png" alt="LEONTHIS JOYERIA" class="catalog-logo-img">
+            <h1 class="catalog-title">𝐿𝐸𝑂𝑁𝑇𝐻𝐼𝑆 𝐶𝐴𝑇𝐴𝐿𝑂𝐺𝑂</h1>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="catalog-container">
+        <!-- Categories -->
+        <div class="categories">
+            <button class="category-btn active" data-category="all">Todos</button>
+            <button class="category-btn" data-category="anillos">Anillos</button>
+            <button class="category-btn" data-category="cadenas">Cadenas</button>
+            <button class="category-btn" data-category="pulseras">Pulseras</button>
+            <button class="category-btn" data-category="aretes">Aretes</button>
+            <button class="category-btn" data-category="nuevos">Nuevos</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+            <!-- Anillos -->
+            <div class="product-card" data-category="anillos">
+                <div class="product-image">
+                    <img src="vanclef.png" alt="van cleef">
+                    <div class="product-badge">18k</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Van Cleef</h3>
+                    <p class="product-material">Oro laminado 18k</p>
+                    <div class="product-footer">
+                        <span class="product-price">$89.900</span>
+                        <button class="btn-whatsapp" onclick="enviarWhatsApp('Anillo Dorado Clásico')">
+                            <i data-lucide="message-circle"></i>
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="anillos">
+                <div class="product-image">
+                    <img src="manilla1.png" alt="Anillo Elegante con Piedra">
+                    <div class="product-badge">18k</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Anillo Elegante con Piedra</h3>
+                    <p class="product-material">Oro laminado 18k</p>
+                    <div class="product-footer">
+                        <span class="product-price">$125.900</span>
+                        <button class="btn-whatsapp" onclick="enviarWhatsApp('Anillo Elegante con Piedra')">
+                            <i data-lucide="message-circle"></i>
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cadenas -->
+            <div class="product-card" data-category="cadenas">
+                <div class="product-image">
+                    <img src="manilla2.png" alt="Cadena Gruesa Dorada">
+                    <div class="product-badge">18k</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Cadena Gruesa Dorada</h3>
+                    <p class="product-material">Oro laminado 18k - 60cm</p>
+                    <div class="product-footer">
+                        <span class="product-price">$198.900</span>
+                        <button class="btn-whatsapp" onclick="enviarWhatsApp('Cadena Gruesa Dorada')">
+                            <i data-lucide="message-circle"></i>
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="cadenas">
+                <div class="product-image">
+                    <img src="manilla3.png" alt="Cadena Delicada Finita">
+                    <div class="product-badge">18k</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Cadena Delicada Finita</h3>
+                    <p class="product-material">Oro laminado 18k - 45cm</p>
+                    <div class="product-footer">
+                        <span class="product-price">$134.900</span>
+                        <button class="btn-whatsapp" onclick="enviarWhatsApp('Cadena Delicada Finita')">
+                            <i data-lucide="message-circle"></i>
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pulseras -->
+            <div class="product-card" data-category="pulseras">
+                <div class="product-image">
+                    <img src="manilla4.png" alt="Pulsera Doble Dorada">
+                    <div class="product-badge">18k</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Pulsera Doble Dorada</h3>
+                    <p class="product-material">Oro laminado 18k - Ajustable</p>
+                    <div class="product-footer">
+                        <span class="product-price">$112.900</span>
+                        <button class="btn-whatsapp" onclick="enviarWhatsApp('Pulsera Doble Dorada')">
+                            <i data-lucide="message-circle"></i>
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="pulseras">
+                <div class="product-image">
+                    <img src="manilla5.png" alt="Pulsera Eternidad">
+                    <div class="product-badge">18k</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Pulsera Eternidad</h3>
+                    <p class="product-material">Oro laminado 18k</p>
+                    <div class="product-footer">
+                        <span class="product-price">$98.900</span>
+                        <button class="btn-whatsapp" onclick="enviarWhatsApp('Pulsera Eternidad')">
+                            <i data-lucide="message-circle"></i>
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aretes -->
+            <div class="product-card" data-category="aretes">
+                <div class="product-image">
+                    <img src="manilla6.png" alt="Aretes Colgantes Dorados">
+                    <div class="product-badge">18k</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Aretes Colgantes Dorados</h3>
+                    <p class="product-material">Oro laminado 18k</p>
+                    <div class="product-footer">
+                        <span class="product-price">$76.900</span>
+                        <button class="btn-whatsapp" onclick="enviarWhatsApp('Aretes Colgantes Dorados')">
+                            <i data-lucide="message-circle"></i>
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="aretes">
+                <div class="product-image">
+                    <img src="manilla7.png" alt="Aretes Clásicos Largos">
+                    <div class="product-badge">18k</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Aretes Clásicos Largos</h3>
+                    <p class="product-material">Oro laminado 18k</p>
+                    <div class="product-footer">
+                        <span class="product-price">$82.900</span>
+                        <button class="btn-whatsapp" onclick="enviarWhatsApp('Aretes Clásicos Largos')">
+                            <i data-lucide="message-circle"></i>
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nuevos -->
+            <div class="product-card" data-category="nuevos">
+                <div class="product-image">
+                    <img src="manilla8.png" alt="Manilla corona rolex belica">
+                    <div class="product-badge new">✨ Nuevo</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Manilla corona rolex belica</h3>
+                    <p class="product-material">Oro laminado 18k</p>
+                    <div class="product-footer">
+                        <span class="product-price">$289.900</span>
+                        <button class="btn-whatsapp" onclick="enviarWhatsApp('Set de Joyas Completo')">
+                            <i data-lucide="message-circle"></i>
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="nuevos">
+                <div class="product-image">
+                    <img src="anillo9.png" alt="Anillo dos carriles">
+                    <div class="product-badge new">✨ Nuevo</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Anillo dos carriles</h3>
+                    <p class="product-material">Oro laminado 18k</p>
+                    <div class="product-footer">
+                        <span class="product-price">$94.900</span>
+                        <button class="btn-whatsapp" onclick="enviarWhatsApp('Anillo dos carriles')">
+                            <i data-lucide="message-circle"></i>
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact WhatsApp Flotante -->
+        <div class="whatsapp-float">
+            <button class="btn-whatsapp-float" onclick="contactarWhatsApp()">
+                <i data-lucide="message-circle"></i>
+                Asesoría Personalizada
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Category filter
+        const categoryButtons = document.querySelectorAll('.category-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                categoryButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+
+                const category = button.dataset.category;
+
+                productCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        function enviarWhatsApp(producto) {
+            const mensaje = `Hola! Me interesa el producto: ${producto}\n\nMe gustaría obtener más información sobre disponibilidad y precios.`;
+            const url = `https://wa.me/573225841110?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        }
+
+        function contactarWhatsApp() {
+            const mensaje = "Hola! Me gustaría recibir asesoría personalizada sobre sus productos de joyería.";
+            const url = `https://wa.me/573225841110?text=${encodeURIComponent(mensaje)}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
