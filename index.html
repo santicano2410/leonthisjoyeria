@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+
+           
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Background Video/Image -->
+        <div class="background-video-container">
+            <!-- Video de fondo -->
+            <video 
+                id="backgroundVideo"
+                class="background-video" 
+                autoplay 
+                muted 
+                loop 
+                playsinline
+                poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='gradient' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%230A0A0A'/%3E%3Cstop offset='100%25' style='stop-color:%23141414'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23gradient)'/%3E%3C/svg%3E">
+                <source src="https://cdn.pixabay.com/video/2020/04/09/35575-407595493_large.mp4" type="video/mp4">
+                Tu navegador no soporta video HTML5.
+            </video>
+            <div class="overlay"></div>
+        </div>
+
+        <!-- Profile Section -->
+        <div class="profile-section">
+            <!-- Logo/Avatar -->
+            <div class="logo-container">
+    <img src="logo.png" alt="LEONTHIS JOYERIA" class="logo-img">
+</div>
+
+            </div>
+
+            <!-- Brand Info -->
+            <div class="brand-info">
+                <h1 class="brand-name">𝐿𝐸𝑂𝑁𝑇𝐻𝐼𝑆 𝐽𝑂𝑌𝐸𝑅𝐼𝐴🦁</h1>
+                <p class="brand-description">Joyería en Oro laminado 18k
+NACIMOS PARA DEJAR HUELLA🦁⚜️</p>
+                <div class="location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    <span>Cartago-Valle | Envios a todo Colombia Contactanos⬇️ </span>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <!-- WhatsApp Button -->
+                <a href="https://wa.me/573225841110?text=Hola leonthis_joyeria🦁 , me interesa adquirir un producto que vi en tu catalogo." class="btn btn-primary">
+                    <i data-lucide="message-circle"></i>
+                    <div class="btn-text">
+                        <span class="btn-main">Consultoría WhatsApp</span>
+                        <span class="btn-sub">Respuesta inmediata 💬</span>
+                    </div>
+                </a>
+
+                <!-- Portfolio Button -->
+                <a href="https://drive.google.com/drive/folders/1-7_0h2Sx7QdFzA4kbnnVr5QgKLDT_NfR?usp=sharing" target="_blank" class="btn btn-secondary">
+                    <i data-lucide="folder"></i>
+                    <div class="btn-text">
+                        <span class="btn-main">Catalogo</span>
+                        <span class="btn-sub"> 📁</span>
+                    </div>
+                </a>
+
+                
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://www.instagram.com/leonthis_joyeria/" target="_blank" class="social-link instagram">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/instagram.svg" alt="Instagram" class="social-icon" />
+                    <span>@leonthis_joyeria
+</span>
+                </a>
+                <a href="https://www.tiktok.com/@leonthis_joyeria" target="_blank" class="social-link tiktok" aria-label="TikTok">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/tiktok.svg" alt="TikTok" class="social-icon" />
+                    <span>leonthis_joyeria</span>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
